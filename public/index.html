@@ -1,0 +1,42 @@
+<!Doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="dist/styles.css" media="screen" title="no title" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <div class="header">
+
+    <div class="menu">
+        <a class="item" ui-sref="home">Home</a>
+        <a class="item" ui-sref="about">About</a>
+    </div>
+
+
+      <!-- <div class="clicks">
+      <div class="auth">
+        <button class="button-primary"><a href="/auth"><h1>Login</h1></a></button>
+      </div>
+      <div class="auth">
+        <button class="button-primary"><a href="/auth/logout"><h1>Logout</h1></a></button>
+      </div>
+      </div> -->
+
+    </div>
+
+{{feed}}
+
+<ui-view><ui-view>
+  <input type="text" name="city" ng-model="city" required>
+  <input type="text" name="country" ng-model="country" required>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+<script src="dist/js/bundle.js"></script>
+</body>
+</html>
