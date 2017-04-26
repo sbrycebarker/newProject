@@ -2,9 +2,11 @@ const express = require('express'),
       bodyParser = require('body-parser'),
       massive = require('massive'),
       passport = require('passport'),
+      Auth0Strategy = require('passport-auth0'),
       config = require('./config.js'),
       cors = require('cors'),
-      request = require('request')
+      request = require('request'),
+      session = require('express-session')
 
 
 const app = express();
@@ -13,7 +15,7 @@ app.use(bodyParser.json());
 app.use(session({
   resave: true, //Without this you get a constant warning about default values
   saveUninitialized: true, //Without this you get a constant warning about default values
-  secret: 'keyboardcat'
+  secret: 'things'
 }))
 app.use(passport.initialize());
 app.use(passport.session());
