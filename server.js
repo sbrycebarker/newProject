@@ -127,6 +127,16 @@ app.get('/api/weather/data/:city/:country', function(req, res) {
   })
 })
 
+// app.get('/api/item')
+// //
+// app.get('/api/product/:itemId')
+// //
+//  app.put('/api/product/:itemtId?desc=....')
+// //
+//   app.post('/api/item')
+// //
+// app.delete('/api/item/:itemId')
+
 
 
 app.listen(3000 , function() {

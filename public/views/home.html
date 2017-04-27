@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="./styles/main.css" media="screen" title="no title" charset="utf-8">
 
+<!--
 <div class="wrap">
   <h1>SPINNERS</h1>
   <div class="spinner spinner-1"></div>
@@ -12,4 +12,52 @@
       <div class="loader"></div>
     </div>
   </div>
+</div> -->
+<main class="main-wrapper">
+<!--MAIN HEADER -->
+<section>
+<header class="main-page-header">
+  <div class="logo-container">
+    <img class="logo" src="./views/img/instagram.png" alt="Check box image">
+  </div>
+  <div class="time-container">
+    <img class="time" src="./img/time.png" alt="countdown">
+  </div>
+</header>
+</section>
+
+<!-- to-do main container -->
+<section class="todo-main-container">
+<div class="progress-box"
+id="newList">
+  <h3>New To Dos</h3>
 </div>
+
+<!--Add progress-box from the reademe-->
+<div class="progress-box">
+  <h3>In Progress</h3>
+  <ul class="list-group" id="currentList"></ul>
+</div>
+<div></div>
+
+<div class="progress-box">
+  <h3>Complete</h3>
+  <ul class="list-group" id="archivedList"></ul>
+</div>
+</section>
+
+<!-- FORM -->
+<!--Add new task form here -->
+<section id="newTaskForm">
+<h3 class="todo-form-title">New To Do </h3>
+<div  class="form-input-container">
+  <img id="cancel" src="./img/instagram.png" alt="close form icon">
+  <input id="newItemInput" class="todo-title-input form-input" type="text" placeholder="To-Do Title">
+  <button  id="saveNewItem" class="complete-todo-button">Add To Do</button>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="todo-footer">
+<img id="add-todo" class="add-todo-button show-add-todo" src="./img/icons/add-button.png" alt="add new todo">
+</footer>
