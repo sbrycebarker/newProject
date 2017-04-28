@@ -1,11 +1,12 @@
+
+
 .main-wrapper
     height: 100vh
-    width: 500px
     overflow: scroll
     background: url("../views/img/NY.jpg")center no-repeat
     background-size: cover
     position: relative
-    margin: auto
+    margin: 0
 
 
 .main-page-header
@@ -15,7 +16,17 @@
     background: blue
     padding: 10px
     z-index: 1
+    background-image: linear-gradient( to right, grey, black )
 
+.box
+  position: relative
+  background-color: black
+  top: 5%
+  margin: 0  10% 0 10%
+  height: 75%
+  width: 75%
+  opacity: .5
+  border: solid 4px black
 
 .logo-container
     width: 50px
@@ -27,10 +38,12 @@
 .time-container
     width: 100px
     padding-top: 10px
+    color: white
 
 
 .time
     width: 90%
+    color: white
 
 
 .todo-main-container
@@ -38,12 +51,14 @@
     margin-top: 60px
     display: flex
     justify-content: space-around
+    opacity: 1
 
 .progress-box
     width: 33%
     display: inline-block
     text-align: center
     color: #fff
+    opacity: 1
 
 
 #newList h3
@@ -109,7 +124,7 @@
     height: 40px
     width: 275px
     margin-bottom: 30px
-    border: 1px solid #F3524A
+    border: 1px solid blue
     background: none
     padding-left: 20px
     font-size: 14px
@@ -132,7 +147,12 @@
     align-items: center
     justify-content: center
     background: blue
+    background-image: linear-gradient( to right, grey, black )
 
+.info
+  position: relative
+  height: 200px
+  width: 200px
 
 .add-todo-button
     display: none

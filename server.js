@@ -23,7 +23,7 @@ app.use(passport.session());
 /////////////
 // DATABASE //
 /////////////
-const massiveInstance = massive.connectSync({connectionString: 'postgres://postgres:1234a@localhost/massive_demo'})
+const massiveInstance = massive.connectSync({connectionString: 'postgres://postgres:1234a@localhost/newProject'})
 // 1234a password
 app.set('db', massiveInstance);
 const db = app.get('db');
@@ -127,15 +127,15 @@ app.get('/api/weather/data/:city/:country', function(req, res) {
   })
 })
 
-// app.get('/api/item')
-// //
-// app.get('/api/product/:itemId')
-// //
-//  app.put('/api/product/:itemtId?desc=....')
-// //
-//   app.post('/api/item')
-// //
-// app.delete('/api/item/:itemId')
+app.get('/api/item')
+
+app.get('/api/product/:itemId')
+
+app.put('/api/product/:itemtId?desc=....')
+
+app.post('/api/item')
+
+app.delete('/api/item/:itemId')
 
 
 
